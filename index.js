@@ -51,6 +51,11 @@ for (var i = 0; i < NoOfDrumButtons; i++) {
         tom4.play();
         break;
 
+      case "s":
+        var crash = new Audio("./sounds/crash.mp3");
+        crash.play();
+        break;
+        
       default:
         console.log(buttonInnerHTML);
         break;
@@ -63,6 +68,6 @@ for (var i = 0; i < NoOfDrumButtons; i++) {
 
     setTimeout(function () {
       activeButton.classList.remove("clicked");
-    }, 100);
+    }, 20);
   }
 }
